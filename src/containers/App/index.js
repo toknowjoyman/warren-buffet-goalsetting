@@ -54,7 +54,7 @@ class App extends Component {
     e.preventDefault();
     if(this.state.inputValue){
       const id = this.state.lastId + 1;
-      if(id <= 10){
+      if(id <= 25){
         const newGoals = this.state.goals.concat({
           id,
           title: this.state.inputValue,
