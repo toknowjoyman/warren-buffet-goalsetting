@@ -36,6 +36,7 @@ class App extends Component {
     this.setState({
       goals: newGoals
     });
+    let selected;
     let selectedGoals = this.state.goals.filter((goal) => goal.checked);
     let numberSelected = selectedGoals.length
     if(numberSelected > 5){
@@ -46,7 +47,7 @@ class App extends Component {
         selected: !selected
       })
     }
-    let selected = this.state.goals.filter((goal) => goal.selected);
+    selected = this.state.goals.filter((goal) => goal.selected);
   }
 
   addGoal(e){
